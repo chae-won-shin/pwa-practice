@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json" />
+    <title>PWA 실습</title>
+</head>
+<body>
+    <div id="root"></div>
+    <h1>안녕하세요 신채원입니다😊</h1>
+</body>
+<script>
+    // 브라우저에서 service worker를 지원한다면 등록하겠다는 의미
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+    }
+</script>
+
+</html>
+
+
+
+
+
+
+
